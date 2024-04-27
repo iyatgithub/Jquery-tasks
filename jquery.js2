@@ -1,0 +1,19 @@
+$(document).ready(function(){
+    $("#addbutton").click(handlebtnclick);
+    $("#todos").on("click", "td", removeMe); // Use event delegation for dynamic elements
+});
+
+function handlebtnclick(){
+    var newtodo = $("#newtodo").val();
+    
+    if(!newtodo){
+        $("#newtodo").addClass("class");
+        return;
+    }
+
+    $("#todos").append("<td>" + newtodo + "</td>");
+}
+
+function removeMe(){
+    $(this).remove();
+}
