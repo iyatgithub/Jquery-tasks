@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./jquery task 2.js"></script>
+    <link rel="stylesheet" href="./jquery task 2.css">
+<style>
+    table {
+        border-collapse: collapse;
+        width: 50%;
+        background-color:plum;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: left;
+        padding: 5px;
+    }
+   
+</style>
+</head>
+
+<body>
+<input type="text" id="newtodo">
+<button id="addbutton">Add to Do</button>
+<table id="todos">
+ 
+    <tr>
+        <td>Milk</td>
+        <td>Tea</td>
+        <td>Coffee</td>
+    </tr>
+   
+</table>
+</body>
+</html>
